@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Blue: hsl(246, 80%, 60%);
+  --LightRed: hsl(15, 100%, 70%);
+  --SoftBlue: hsl(195, 74%, 62%;);
+  --LightRed: hsl(348, 100%, 68%);
+  --LimeGreen: hsl(145, 58%, 55%);
+  --Violet: hsl(264, 64%, 52%);
+  --SoftOrange: hsl(43, 84%, 65%);
+  --VeryDarkBlue: hsl(226, 43%, 10%);
+  --DarkBlue: hsl(235, 46%, 20%);
+  --DesaturatedBlue: hsl(235, 45%, 61%);
+  --PaleBlue: hsl(236, 100%, 87%);
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  background-color: var(--VeryDarkBlue);
+}
+a {
+  text-decoration: none;
+}
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  display: flex;
+  gap: 20px;
+}
+.Tracker-profile {
+  border-radius: 10px;
+  background-color: var(--DarkBlue);
+  width: 250px;
+  height: 520px;
+}
+
+.Profile {
+  width: 100%;
+  background-color: var(--Blue);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.ProfileImg img {
+  width: 70px;
+  outline: 3px solid white;
+  border-radius: 50%;
+}
+.ProfileName {
+  color: white;
+}
+.ProfileName p {
+  margin-top: 30px;
+  color: var(--PaleBlue);
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.ProfileName h1 {
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.ProfileSub {
+  padding: 30px;
+}
+.link {
+  background-color: var(--DarkBlue);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 15px;
+}
+.ProfileLink {
+  margin-top: 10px;
+}
+.ProfileLinkWhite {
+  color: white;
+}
+.ProfileLinkSmoke {
+  color: var(--PaleBlue);
+  transition: all 0.3s ease-in-out;
+}
+.ProfileLinkSmoke:hover {
+  color: white;
+}
+/* left side */
+.leftSide {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+  height: auto;
+  gap: 20px;
+}
+.Tracker-card-info {
+  color: white;
+  height: 250px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.Tracker-card-info:hover {
+  transform: scale(1.1);
+}
+
+.info-card-icon {
+  width: 220px;
+  height: 100px;
+  display: flex;
+  justify-content: end;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+.info-card-icon img {
+  object-fit: fill;
+  margin-top: 5px;
+}
+.bg-orange {
+  background-color: #d4917a;
+}
+.bg-blue {
+  background-color: #79d0ed;
+}
+.bg-red {
+  background-color: #ec99a9;
+}
+.bg-green {
+  background-color: #87efbd;
+}
+.bg-green img {
+  transform: rotate(180deg);
+}
+.bg-purple {
+  background-color: #c9a7e0;
+}
+.bg-yellow {
+  background-color: #f9e3a2;
+}
+.svg-top-icon {
+  margin-top: -10px;
+}
+.svg-top-icon img {
+  width: 70px;
+  position: relative;
+  z-index: 1;
+}
+.info-card-text {
+  padding: 30px;
+  width: 220px;
+  height: 200px;
+  background-color: var(--DarkBlue);
+  border-radius: 15px;
+  top: -65px;
+  position: relative;
+  z-index: 2;
+}
+.info-card-text:hover {
+  background-color: var(--Blue);
+}
+.text-top {
+  display: flex;
+  justify-content: space-between;
+}
+.Bighours {
+  font-size: 48px;
+  font-weight: 300;
+  margin: 20px auto;
+}
+.Smallhours {
+  font-size: 15px;
+  font-weight: 300;
+  margin: 30px auto;
+  padding: 5px;
+}
+@media (max-width: 400px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section {
+    margin-top: 1700px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Tracker-profile {
+    height: 500px;
+    width: 300px;
+    border: 1px solid blue;
+  }
+  .leftSide {
+    border: 1px solid red;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .Tracker-card-info {
+    margin-top: 20px;
+  }
+}
