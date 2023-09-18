@@ -244,13 +244,12 @@ section {
     margin-bottom: 20px;
   }
   .Bighours {
-    font-size: 30px;
+    font-size: 25px;
     display: inline;
-    padding-left: 20px;
   }
   .Smallhours {
     font-size: 15px;
     display: inline;
-    padding-left: 60px;
+    padding-left: 30px;
   }
 }
