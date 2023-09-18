@@ -187,23 +187,70 @@ section {
     justify-content: center;
   }
   section {
-    margin-top: 1700px;
+    margin-top: 1000px;
     width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   .Tracker-profile {
-    height: 500px;
+    height: 200px;
     width: 300px;
     border: 1px solid blue;
+    border-radius: 25px;
+  }
+  .Profile {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+    padding: 20px;
+  }
+  .ProfileImg {
+    margin-left: -10px;
+  }
+  .ProfileName {
+    margin-top: -20px;
+    margin-left: -10px;
+  }
+  .ProfileName p {
+    font-size: 15px;
+  }
+  .ProfileName h1 {
+    font-size: 20px;
+  }
+  .ProfileSub {
+    display: flex;
+    justify-content: space-between;
   }
   .leftSide {
-    border: 1px solid red;
     justify-content: center;
-    flex-wrap: wrap;
   }
   .Tracker-card-info {
-    margin-top: 20px;
+    width: 300px;
+    height: 200px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+  }
+  .info-card-icon {
+    width: 300px;
+    height: 100px;
+  }
+  .info-card-text {
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+  }
+  .text-top {
+    margin-bottom: 20px;
+  }
+  .Bighours {
+    font-size: 30px;
+    display: inline;
+    padding-left: 20px;
+  }
+  .Smallhours {
+    font-size: 15px;
+    display: inline;
+    padding-left: 60px;
   }
 }
